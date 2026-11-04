@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact &amp; Confidential Consultation — Melting Pot Psychological Services</title>
+  <meta name="description" content="Reach out to Melting Pot Psychological Services. Request a complimentary 15-minute consultation, ask a question, or find directions to our sanctuary."/>
+  
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+
+  <!-- Critical Primary Stylesheet (Prevents FOUC & Layout Distortion) -->
+  <link rel="stylesheet" href="/src/styles/main.css"/>
+
+  <!-- Brand Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+  <link rel="shortcut icon" href="favicon.ico"/>
+
+  <style>
+    /* Critical anti-FOUC & drawer stability */
+    #mobile-menu-drawer { visibility: hidden; pointer-events: none; }
+    #mobile-menu-backdrop { display: none; }
+  </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+        <img alt="Melting Pot Psychological Services Logo" class="h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105" src="images/logo-icon.png"/>
+        <div class="flex flex-col leading-tight">
+          <span class="font-headline-sm text-headline-sm text-primary tracking-tight font-serif">Melting Pot</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase font-sans hidden sm:inline">Psychological Services</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden xl:flex items-center gap-6 lg:gap-8">
+        <a class="nav-link font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="index.html">Home</a>
+        <a class="nav-link font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="about.html">About Us</a>
+        <a class="nav-link font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="about.html#our-approach">Our Approach</a>
+        <a class="nav-link font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="services.html">Our Services</a>
+        <a class="nav-link font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="about.html#vision-mission">Values</a>
+        <a class="nav-link font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="contact.html#faq-section">FAQ</a>
+        <a class="nav-link font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" href="contact.html">Contact Us</a>
+      </nav>
+
+      <!-- Right CTAs & Mobile Hamburger -->
+      <div class="flex items-center gap-3 sm:gap-4 shrink-0">
+        <a class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_4px_20px_-2px_rgba(184,93,67,0.18)] hover:bg-primary-container hover:text-on-primary-container transition-all duration-200" href="#consultation-form">Book a Consultation</a>
+        <a href="#consultation-form" class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 text-on-primary hover:bg-primary-container transition-colors" aria-label="Book Consultation">
+          <span class="material-symbols-outlined text-[18px]">person</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" type="button" class="xl:hidden w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-variant hover:text-primary transition-colors" aria-label="Open navigation menu">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Backdrop -->
+  <div id="mobile-menu-backdrop" class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300"></div>
+
+  <!-- Mobile Menu Drawer -->
+  <div id="mobile-menu-drawer" class="fixed top-0 right-0 z-50 w-[85%] max-w-[340px] h-full bg-surface shadow-2xl p-6 flex flex-col justify-between invisible pointer-events-none translate-x-full transition-all duration-300 ease-in-out overflow-y-auto border-l border-surface-variant/60">
+    <div class="space-y-6">
+      <div class="flex items-center justify-between pb-4 border-b border-surface-variant">
+        <div class="flex items-center gap-2.5">
+          <img alt="Melting Pot Logo" class="h-9 w-auto object-contain" src="images/logo-icon.png"/>
+          <div class="flex flex-col leading-none">
+            <span class="font-headline-sm text-[20px] text-primary font-serif font-medium">Melting Pot</span>
+            <span class="text-[10px] tracking-wider uppercase text-on-surface-variant font-sans mt-0.5">Psychological Services</span>
+          </div>
+        </div>
+        <button id="close-mobile-menu-btn" type="button" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-variant hover:text-primary transition-colors" aria-label="Close navigation menu">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <div class="space-y-1">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-outline px-3 block mb-2">Navigation</span>
+        <nav class="flex flex-col space-y-1">
+          <a class="mobile-nav-link px-3.5 py-2.5 rounded-xl text-on-surface font-title-md text-[15px] hover:bg-surface-container transition-all flex items-center justify-between group" href="index.html">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">home</span>
+              <span>Home</span>
+            </div>
+            <span class="mobile-active-dot w-2 h-2 rounded-full bg-primary hidden"></span>
+          </a>
+
+          <a class="mobile-nav-link px-3.5 py-2.5 rounded-xl text-on-surface font-title-md text-[15px] hover:bg-surface-container transition-all flex items-center justify-between group" href="about.html">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">nature_people</span>
+              <span>About Us</span>
+            </div>
+            <span class="mobile-active-dot w-2 h-2 rounded-full bg-primary hidden"></span>
+          </a>
+
+          <a class="mobile-nav-link px-3.5 py-2.5 rounded-xl text-on-surface font-title-md text-[15px] hover:bg-surface-container transition-all flex items-center justify-between group" href="about.html#our-approach">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">spa</span>
+              <span>Our Approach</span>
+            </div>
+            <span class="mobile-active-dot w-2 h-2 rounded-full bg-primary hidden"></span>
+          </a>
+
+          <a class="mobile-nav-link px-3.5 py-2.5 rounded-xl text-on-surface font-title-md text-[15px] hover:bg-surface-container transition-all flex items-center justify-between group" href="services.html">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">psychology</span>
+              <span>Clinical Services (11)</span>
+            </div>
+            <span class="mobile-active-dot w-2 h-2 rounded-full bg-primary hidden"></span>
+          </a>
+
+          <a class="mobile-nav-link px-3.5 py-2.5 rounded-xl text-on-surface font-title-md text-[15px] hover:bg-surface-container transition-all flex items-center justify-between group" href="about.html#vision-mission">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">favorite</span>
+              <span>Values &amp; Ethos</span>
+            </div>
+            <span class="mobile-active-dot w-2 h-2 rounded-full bg-primary hidden"></span>
+          </a>
+
+          <a class="mobile-nav-link px-3.5 py-2.5 rounded-xl text-on-surface font-title-md text-[15px] hover:bg-surface-container transition-all flex items-center justify-between group" href="contact.html#faq-section">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">help_outline</span>
+              <span>FAQ</span>
+            </div>
+            <span class="mobile-active-dot w-2 h-2 rounded-full bg-primary hidden"></span>
+          </a>
+
+          <a class="mobile-nav-link px-3.5 py-2.5 rounded-xl text-on-surface font-title-md text-[15px] hover:bg-surface-container transition-all flex items-center justify-between group" href="contact.html">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-[20px] text-secondary group-hover:text-primary transition-colors">mail</span>
+              <span>Contact &amp; Sanctuary</span>
+            </div>
+            <span class="mobile-active-dot w-2 h-2 rounded-full bg-primary hidden"></span>
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Bottom Action & Crisis Info -->
+    <div class="pt-6 border-t border-surface-variant space-y-3">
+      <a class="mobile-nav-link w-full py-3 px-5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md hover:bg-primary-container transition-all" href="contact.html#consultation-form">
+        <span>Book Consultation</span>
+        <span class="material-symbols-outlined text-[18px]">calendar_today</span>
+      </a>
+
+      <!-- 988 badge -->
+      <div class="p-3 rounded-xl bg-secondary-container/50 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px] text-secondary">support_agent</span>
+          <span class="font-label-sm text-label-sm text-on-secondary-container">24/7 Crisis Lifeline</span>
+        </div>
+        <a href="tel:988" class="text-xs font-bold text-secondary bg-surface px-2.5 py-1 rounded-full shadow-sm hover:text-primary transition-colors">Call 988</a>
+      </div>
+
+      <div class="text-center font-body-sm text-[13px] text-on-surface-variant">
+        Questions? <a href="tel:2125550194" class="text-primary font-medium hover:underline">(212) 555-0194</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="w-full pt-20 bg-surface flex-grow">
+    <div class="flex flex-col w-full">
+      <!-- Hero Section -->
+      <div class="relative w-full overflow-hidden bg-surface-container-low py-16 lg:py-24">
+        <div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-secondary-container/30 blur-3xl pointer-events-none"></div>
+        <div class="absolute left-1/3 bottom-0 w-80 h-80 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+              <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surface text-primary shadow-sm font-semibold">
+                <span class="material-symbols-outlined text-[18px]">nature_people</span>
+                <span class="font-label-sm text-label-sm tracking-wider uppercase">Safe, Culturally Affirming Space</span>
+              </div>
+              
+              <h1 class="font-display text-display text-on-surface tracking-tight">
+                Your Story Belongs Here.
+              </h1>
+              
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                Taking the first step toward counselling can feel unfamiliar. You may be unsure what to say, what to expect, or whether counselling is right for you. That is okay. You can begin with a question, a concern, a difficult experience, or simply the feeling that you would like something in your life to change.
+              </p>
+              
+              <div class="flex flex-wrap items-center gap-6 pt-2">
+                <div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+                  <span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span>
+                  <span>100% Confidential &amp; Encrypted</span>
+                </div>
+                <div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+                  <span class="material-symbols-outlined text-secondary text-[20px]">schedule</span>
+                  <span>Response within 24 Business Hours</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="lg:col-span-5 relative">
+              <div class="relative rounded-3xl overflow-hidden shadow-xl aspect-[4/3] bg-surface-container">
+                <img class="w-full h-full object-cover" alt="A warm, serene consultation therapy room bathed in soft afternoon sun. Linen textures, earth-toned terracotta ceramics, lush indoor ficus plants, gentle neutral cushions on an inviting curved armchair, high architectural peace and grounded cultural belonging." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaF-YFW6BJrDkzeS2qDCj_bk_tynVLXbvsApuNGBT4gOXixZJsta2ciGFVgcB2R69QPghTOjPOvCF2EwFWTwe4IB1YeEADYzUHukmQIiUP9Xc9tS5qCKQtJMakEVzj5fFx2mAU1xt4iyY0QXW7cWyA8YhYviP-ttPu56cc5USBdYd6iz6_Fwukaao0B0f9Ot1PlC4OdETfRdOR8ddSHFFIn1qhErwxzCa7cT40xwRK"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/40 via-transparent to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-md p-4 rounded-2xl shadow-sm">
+                  <p class="font-headline-sm text-headline-sm text-on-surface italic font-serif">"Healing begins in the courage to be heard."</p>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Welcoming in-person care in Suite 300 &amp; statewide telehealth</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Form & Contact Section -->
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          <!-- Form Column -->
+          <div class="lg:col-span-7 bg-surface-container-lowest rounded-3xl p-8 lg:p-12 shadow-sm space-y-10">
+            <div>
+              <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Confidential Consultation Request</span>
+              <h2 class="font-headline-md text-headline-md text-on-surface mt-1 font-serif">Begin at Your Own Pace</h2>
+              <p class="font-body-md text-body-md text-on-surface-variant mt-2">
+                Share as much or as little as feels comfortable. Every question here helps us match you with a clinician who truly honours your lived experience.
+              </p>
+            </div>
+            
+            <form class="space-y-8" id="consultation-form">
+              <!-- Question 1 -->
+              <div class="space-y-3">
+                <label class="block font-title-md text-title-md text-on-surface">
+                  1. What would you like us to call you?
+                </label>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <input class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all font-body-md text-body-md" placeholder="Preferred First &amp; Last Name" required="" type="text"/>
+                  </div>
+                  <div>
+                    <input class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all font-body-md text-body-md" placeholder="Pronouns (e.g. they/them, she/her, he/him)" type="text"/>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 2 -->
+              <div class="space-y-3">
+                <label class="block font-title-md text-title-md text-on-surface">
+                  2. How can we reach you securely?
+                </label>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <input class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all font-body-md text-body-md" placeholder="Email Address" required="" type="email"/>
+                  </div>
+                  <div>
+                    <input class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all font-body-md text-body-md" placeholder="Phone Number" type="tel"/>
+                  </div>
+                </div>
+                <div class="pt-2">
+                  <span class="block font-label-md text-label-md text-on-surface-variant mb-2">Preferred contact channel:</span>
+                  <div class="flex flex-wrap gap-3">
+                    <label class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container cursor-pointer select-none text-on-surface font-body-sm text-body-sm transition-all hover:bg-surface-variant has-[:checked]:bg-primary has-[:checked]:text-on-primary">
+                      <input checked="" class="hidden" name="contact-method" type="radio" value="email"/>
+                      <span class="material-symbols-outlined text-[16px]">mail</span>
+                      <span>Email</span>
+                    </label>
+                    <label class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container cursor-pointer select-none text-on-surface font-body-sm text-body-sm transition-all hover:bg-surface-variant has-[:checked]:bg-primary has-[:checked]:text-on-primary">
+                      <input class="hidden" name="contact-method" type="radio" value="phone"/>
+                      <span class="material-symbols-outlined text-[16px]">call</span>
+                      <span>Phone Call</span>
+                    </label>
+                    <label class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container cursor-pointer select-none text-on-surface font-body-sm text-body-sm transition-all hover:bg-surface-variant has-[:checked]:bg-primary has-[:checked]:text-on-primary">
+                      <input class="hidden" name="contact-method" type="radio" value="text"/>
+                      <span class="material-symbols-outlined text-[16px]">chat</span>
+                      <span>Discreet SMS Text</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 3 -->
+              <div class="space-y-3">
+                <label class="block font-title-md text-title-md text-on-surface">
+                  3. Who is this support for?
+                </label>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                  <label class="flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container cursor-pointer text-center select-none text-on-surface transition-all hover:bg-surface-variant has-[:checked]:bg-secondary has-[:checked]:text-on-secondary">
+                    <input checked="" class="hidden" name="support_for" type="radio" value="myself"/>
+                    <span class="material-symbols-outlined text-[24px] mb-1">person</span>
+                    <span class="font-label-md text-label-md">Myself</span>
+                  </label>
+                  <label class="flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container cursor-pointer text-center select-none text-on-surface transition-all hover:bg-surface-variant has-[:checked]:bg-secondary has-[:checked]:text-on-secondary">
+                    <input class="hidden" name="support_for" type="radio" value="couple"/>
+                    <span class="material-symbols-outlined text-[24px] mb-1">favorite</span>
+                    <span class="font-label-md text-label-md">Couple / Partner</span>
+                  </label>
+                  <label class="flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container cursor-pointer text-center select-none text-on-surface transition-all hover:bg-surface-variant has-[:checked]:bg-secondary has-[:checked]:text-on-secondary">
+                    <input class="hidden" name="support_for" type="radio" value="family"/>
+                    <span class="material-symbols-outlined text-[24px] mb-1">diversity_3</span>
+                    <span class="font-label-md text-label-md">Family Unit</span>
+                  </label>
+                  <label class="flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container cursor-pointer text-center select-none text-on-surface transition-all hover:bg-surface-variant has-[:checked]:bg-secondary has-[:checked]:text-on-secondary">
+                    <input class="hidden" name="support_for" type="radio" value="child"/>
+                    <span class="material-symbols-outlined text-[24px] mb-1">child_care</span>
+                    <span class="font-label-md text-label-md">Child / Adolescent</span>
+                  </label>
+                  <label class="flex flex-col items-center justify-center p-3 rounded-2xl bg-surface-container cursor-pointer text-center select-none text-on-surface transition-all hover:bg-surface-variant has-[:checked]:bg-secondary has-[:checked]:text-on-secondary col-span-2 sm:col-span-2">
+                    <input class="hidden" name="support_for" type="radio" value="undecided"/>
+                    <span class="material-symbols-outlined text-[24px] mb-1">help_outline</span>
+                    <span class="font-label-md text-label-md">Not Sure Yet / Exploring</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Question 4 -->
+              <div class="space-y-3">
+                <div class="flex items-baseline justify-between">
+                  <label class="block font-title-md text-title-md text-on-surface">
+                    4. What brings you here today?
+                  </label>
+                  <span class="font-label-sm text-label-sm text-outline">Select all that apply</span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                  <label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer text-on-surface transition-all">
+                    <input class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+                    <span class="font-body-sm text-body-sm">Anxiety, Stress or Depression</span>
+                  </label>
+                  <label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer text-on-surface transition-all">
+                    <input class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+                    <span class="font-body-sm text-body-sm">Life Transitions &amp; Crossroads</span>
+                  </label>
+                  <label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer text-on-surface transition-all">
+                    <input class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+                    <span class="font-body-sm text-body-sm">Cultural Identity &amp; Acculturation</span>
+                  </label>
+                  <label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer text-on-surface transition-all">
+                    <input class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+                    <span class="font-body-sm text-body-sm">Relationship &amp; Communication Dynamics</span>
+                  </label>
+                  <label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer text-on-surface transition-all">
+                    <input class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+                    <span class="font-body-sm text-body-sm">Purpose, Meaning &amp; Self-Worth</span>
+                  </label>
+                  <label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer text-on-surface transition-all">
+                    <input class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+                    <span class="font-body-sm text-body-sm">Grief &amp; Ambiguous Loss</span>
+                  </label>
+                  <label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer text-on-surface transition-all sm:col-span-2">
+                    <input class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+                    <span class="font-body-sm text-body-sm">Other / Something difficult to put into words</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Question 5 -->
+              <div class="space-y-3">
+                <label class="block font-title-md text-title-md text-on-surface">
+                  5. Is there anything specific you would like us to know about your story or cultural background?
+                </label>
+                <p class="font-body-sm text-body-sm text-outline italic">
+                  Only share what you feel comfortable sharing. There is no requirement to explain yourself in full right now.
+                </p>
+                <textarea class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all font-body-md text-body-md resize-y" placeholder="Your reflections, language preferences, identity details, or hopes for therapy..." rows="4"></textarea>
+              </div>
+
+              <!-- Question 6 -->
+              <div class="space-y-3">
+                <label class="block font-title-md text-title-md text-on-surface">
+                  6. Preferred Modality
+                </label>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <label class="flex items-start gap-3 p-4 rounded-2xl bg-surface-container cursor-pointer transition-all hover:bg-surface-variant has-[:checked]:bg-secondary-container has-[:checked]:text-on-secondary-container">
+                    <input checked="" class="mt-1 text-primary accent-primary" name="modality" type="radio" value="in-person"/>
+                    <div>
+                      <span class="font-title-md text-title-md block text-on-surface">In-Person Sessions</span>
+                      <span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">At 428 Harmony Way, Suite 300</span>
+                    </div>
+                  </label>
+                  <label class="flex items-start gap-3 p-4 rounded-2xl bg-surface-container cursor-pointer transition-all hover:bg-surface-variant has-[:checked]:bg-secondary-container has-[:checked]:text-on-secondary-container">
+                    <input class="mt-1 text-primary accent-primary" name="modality" type="radio" value="telehealth"/>
+                    <div>
+                      <span class="font-title-md text-title-md block text-on-surface">Virtual Telehealth</span>
+                      <span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">Secure, encrypted statewide video</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Submit & Confidentiality Notice -->
+              <div class="pt-4 space-y-6">
+                <button class="w-full py-4 px-8 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container transition-all flex items-center justify-center gap-3" type="submit">
+                  <span class="material-symbols-outlined text-[20px]">send</span>
+                  <span>Send Reassurance Inquiry / Request Consultation</span>
+                </button>
+                <div class="flex items-center gap-3 p-4 rounded-2xl bg-surface-container-low text-on-surface-variant">
+                  <span class="material-symbols-outlined text-secondary text-[22px] shrink-0">lock</span>
+                  <p class="font-body-sm text-body-sm">
+                    <strong class="font-bold text-on-surface">Privacy &amp; Confidentiality Commitment:</strong> All disclosures are protected under strict HIPAA regulations and psychological ethics codes. We do not share your information with outside parties.
+                  </p>
+                </div>
+              </div>
+            </form>
+
+            <!-- Success State -->
+            <div class="hidden py-12 text-center space-y-4" id="success-state">
+              <div class="w-16 h-16 mx-auto rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+                <span class="material-symbols-outlined text-[32px]">task_alt</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md text-on-surface font-serif">Thank you. We have received your inquiry.</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto">
+                A welcoming clinician from our intake care team will reach out gently within one business day via your preferred channel. You do not need to prepare anything further.
+              </p>
+              <button id="reset-form-btn" type="button" class="mt-4 px-6 py-2.5 rounded-full bg-surface-variant text-on-surface font-label-md text-label-md hover:bg-surface-dim transition-colors">
+                Submit Another Request
+              </button>
+            </div>
+          </div>
+
+          <!-- Sidebar Column: Practice Info, Crisis Banner & FAQ -->
+          <div class="lg:col-span-5 space-y-8">
+            <!-- Practice Information -->
+            <div class="rounded-3xl bg-secondary-container/40 p-8 shadow-sm space-y-6">
+              <div class="space-y-1">
+                <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Practice Information</span>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">Melting Pot Psychological Services</h3>
+                <p class="font-headline-sm text-headline-sm text-secondary italic font-serif">Where Every Story Belongs</p>
+              </div>
+              
+              <div class="space-y-4 pt-2 font-body-md text-body-md text-on-surface">
+                <div class="flex items-start gap-3.5">
+                  <span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">location_on</span>
+                  <div>
+                    <p class="font-bold">Sanctuary Location</p>
+                    <p class="text-on-surface-variant">428 Harmony Way, Suite 300<br/>Telehealth available statewide</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start gap-3.5">
+                  <span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">call</span>
+                  <div>
+                    <p class="font-bold">Telephone</p>
+                    <a class="text-on-surface-variant hover:text-primary transition-colors" href="tel:5557284637">(555) 728-4637</a>
+                  </div>
+                </div>
+                
+                <div class="flex items-start gap-3.5">
+                  <span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">mail</span>
+                  <div>
+                    <p class="font-bold">Email Inquiries</p>
+                    <a class="text-on-surface-variant hover:text-primary transition-colors break-all" href="mailto:hello@meltingpotpsychological.com">hello@meltingpotpsychological.com</a>
+                  </div>
+                </div>
+                
+                <div class="flex items-start gap-3.5">
+                  <span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">schedule</span>
+                  <div>
+                    <p class="font-bold">Business &amp; Session Hours</p>
+                    <p class="text-on-surface-variant font-body-sm text-body-sm">
+                      Monday – Friday: 8:00 AM – 7:00 PM<br/>
+                      Saturday: 9:00 AM – 2:00 PM<br/>
+                      Sunday: Closed for rest &amp; reflection
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Map preview -->
+              <div class="w-full h-44 rounded-2xl bg-cover bg-center overflow-hidden relative shadow-inner" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAT4hDRx8Ts0JY8pAt4N48JPbW3lo8db9KytGCEM-gD-VD82P-Ac6_rINKrp-4dyt10dYXtXOXNPAjMgQOdWB9jkO3WXxiMVVdjKj-dIDZnlwGlVXFBb5DjvRcqgtZ5iXwMRWcjE_DR5N-pmRsjT0kbfWP0p1S5yDlgDd010hy8FTbyJktfR3wyDuGryV3GdmhXUJO8yr3zjxfYIfqts6jq6aYJGCtUQ2EMjt6gTXhZ')">
+                <div class="absolute inset-0 bg-secondary/10 pointer-events-none"></div>
+                <div class="absolute bottom-2 left-2 right-2 px-3 py-1.5 rounded-lg bg-surface/90 text-on-surface font-label-sm text-label-sm backdrop-blur-md flex items-center justify-between">
+                  <span>View in Map Application</span>
+                  <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Crisis Support Notice -->
+            <div class="p-6 rounded-3xl bg-error-container/60 text-on-error-container space-y-3">
+              <div class="flex items-center gap-2 text-error">
+                <span class="material-symbols-outlined text-[24px]">emergency</span>
+                <span class="font-title-md text-title-md font-bold">Crisis Support Notice</span>
+              </div>
+              <p class="font-body-sm text-body-sm leading-relaxed text-on-surface">
+                Melting Pot is an outpatient clinical practice. If you are experiencing acute thoughts of self-harm, a psychiatric crisis, or immediate danger, please do not wait for an email response.
+              </p>
+              <div class="pt-2 flex items-center justify-between gap-3 bg-surface rounded-2xl p-4 shadow-sm">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-error text-on-error flex items-center justify-center font-bold font-title-lg text-title-lg">
+                    988
+                  </div>
+                  <div>
+                    <p class="font-title-md text-title-md text-on-surface leading-tight font-semibold">Suicide &amp; Crisis Lifeline</p>
+                    <p class="font-label-sm text-label-sm text-on-surface-variant">Free, 24/7, confidential support</p>
+                  </div>
+                </div>
+                <a class="px-4 py-2 rounded-full bg-error text-on-error font-label-md text-label-md hover:bg-error/90 transition-colors shrink-0" href="tel:988">
+                  Call Now
+                </a>
+              </div>
+            </div>
+
+            <!-- Frequently Asked Questions Accordion -->
+            <div class="rounded-3xl bg-surface-container-lowest p-8 shadow-sm space-y-6" id="faq-section">
+              <div class="flex items-center gap-2 text-primary">
+                <span class="material-symbols-outlined text-[20px]">help_center</span>
+                <h4 class="font-title-lg text-title-lg text-on-surface">Frequently Asked Questions</h4>
+              </div>
+              
+              <div class="space-y-4" id="faq-accordion">
+                <!-- FAQ Item 1 -->
+                <div class="rounded-2xl bg-surface-container-low overflow-hidden transition-all">
+                  <button class="w-full text-left p-4 flex items-center justify-between gap-4 font-title-md text-title-md text-on-surface" onclick="toggleFaq(this)" type="button">
+                    <span>1. Do I need to be in a crisis to seek counselling?</span>
+                    <span class="material-symbols-outlined text-[20px] transition-transform text-outline transform rotate-0 faq-icon">expand_more</span>
+                  </button>
+                  <div class="px-4 pb-4 hidden text-on-surface-variant font-body-sm text-body-sm leading-relaxed faq-content">
+                    Not at all. Many of our clients seek therapy when navigating an ambiguous life milestone, desiring richer personal self-knowledge, unravelling relational habits, or simply wanting a grounding weekly dialogue without judgement.
+                  </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="rounded-2xl bg-surface-container-low overflow-hidden transition-all">
+                  <button class="w-full text-left p-4 flex items-center justify-between gap-4 font-title-md text-title-md text-on-surface" onclick="toggleFaq(this)" type="button">
+                    <span>2. What if I do not know exactly what I need help with?</span>
+                    <span class="material-symbols-outlined text-[20px] transition-transform text-outline transform rotate-0 faq-icon">expand_more</span>
+                  </button>
+                  <div class="px-4 pb-4 hidden text-on-surface-variant font-body-sm text-body-sm leading-relaxed faq-content">
+                    That is completely normal. Often, healing starts simply as a quiet intuition that you would like something to feel different. Clarifying your feelings, priorities, and needs is part of our shared therapeutic journey together.
+                  </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="rounded-2xl bg-surface-container-low overflow-hidden transition-all">
+                  <button class="w-full text-left p-4 flex items-center justify-between gap-4 font-title-md text-title-md text-on-surface" onclick="toggleFaq(this)" type="button">
+                    <span>3. Will my story and culture be respected?</span>
+                    <span class="material-symbols-outlined text-[20px] transition-transform text-outline transform rotate-0 faq-icon">expand_more</span>
+                  </button>
+                  <div class="px-4 pb-4 hidden text-on-surface-variant font-body-sm text-body-sm leading-relaxed faq-content">
+                    Unequivocally. Melting Pot was established specifically to overcome cultural blind spots in conventional healthcare. We honour the nuances of your heritage, immigration narrative, generational values, faith, and identity.
+                  </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="rounded-2xl bg-surface-container-low overflow-hidden transition-all">
+                  <button class="w-full text-left p-4 flex items-center justify-between gap-4 font-title-md text-title-md text-on-surface" onclick="toggleFaq(this)" type="button">
+                    <span>4. What should I expect in our first consultation?</span>
+                    <span class="material-symbols-outlined text-[20px] transition-transform text-outline transform rotate-0 faq-icon">expand_more</span>
+                  </button>
+                  <div class="px-4 pb-4 hidden text-on-surface-variant font-body-sm text-body-sm leading-relaxed faq-content">
+                    Our initial intake conversation is a warm, pressure-free dialogue lasting 15 to 20 minutes. It gives us a chance to hear what you are seeking, answer any procedural questions, and determine whether our clinicians are the right fit for your goals.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sanctuary Ethos Closing Banner -->
+      <div class="w-full bg-surface-container py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center space-y-6">
+          <div class="inline-flex p-3 rounded-full bg-surface text-primary shadow-sm">
+            <span class="material-symbols-outlined text-[28px]">spa</span>
+          </div>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface max-w-3xl mx-auto font-serif">
+            A sanctuary designed for unhurried presence.
+          </h2>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">
+            Whether meeting in our peaceful consultation rooms or from the comfort of your own sanctuary via secure telehealth, you are met with gentle reverence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full bg-surface-container-low text-on-surface-variant pt-16 pb-12 mt-16 shadow-[0_-1px_12px_rgba(0,0,0,0.02)]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <!-- Crisis Banner -->
+      <div class="p-6 md:p-8 rounded-2xl bg-secondary-container/40 mb-14 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border border-secondary/20">
+        <div class="flex items-start gap-4">
+          <div class="p-3 rounded-full bg-secondary-container text-on-secondary-container">
+            <span class="material-symbols-outlined text-[24px]">support_agent</span>
+          </div>
+          <div>
+            <h4 class="font-title-lg text-title-lg text-on-secondary-container mb-1">Immediate Support &amp; Crisis Resources</h4>
+            <p class="font-body-sm text-body-sm text-on-secondary-container/90 max-w-2xl">
+              If you or a loved one is in crisis or distress, free, confidential compassionate care is available 24/7. Call or text <strong class="font-bold">988</strong> to connect with the Suicide &amp; Crisis Lifeline, or text HOME to 741741.
+            </p>
+          </div>
+        </div>
+        <a class="shrink-0 px-5 py-2.5 rounded-full bg-secondary text-on-secondary font-label-lg text-label-lg hover:bg-secondary/90 transition-colors flex items-center gap-2 shadow-sm" href="tel:988">
+          <span class="material-symbols-outlined text-[18px]">call</span>Call 988
+        </a>
+      </div>
+
+      <!-- Main Footer 4-Column Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-14 border-b border-surface-variant">
+        <!-- Col 1: Brand, Mission, and Social Icons -->
+        <div class="lg:col-span-4 space-y-5">
+          <a href="index.html" class="flex items-center gap-3 group w-fit">
+            <img alt="Melting Pot Logo" class="h-11 w-auto object-contain transition-transform group-hover:scale-105" src="images/logo-icon.png"/>
+            <div class="flex flex-col leading-tight">
+              <span class="font-headline-sm text-[22px] text-primary tracking-tight font-serif">Melting Pot</span>
+              <span class="font-label-sm text-[11px] text-on-surface-variant tracking-wider uppercase font-sans">Psychological Services</span>
+            </div>
+          </a>
+
+          <p class="font-headline-sm text-[18px] text-on-surface italic font-serif">Where Every Story Belongs.</p>
+          <div class="flex items-center gap-2 text-xs font-semibold tracking-wider text-secondary uppercase font-sans">
+            <span>Connection</span>
+            <span class="w-1 h-1 rounded-full bg-primary"></span>
+            <span>Safety</span>
+            <span class="w-1 h-1 rounded-full bg-primary"></span>
+            <span>Inclusion</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed max-w-sm">
+            A culturally affirming, grounded psychological practice creating an atmospheric sanctuary for healing, self-discovery, and authentic connection across all walks of life.
+          </p>
+
+          <!-- Social Media Icons -->
+          <div class="pt-2">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-outline block mb-3">Connect With Us</span>
+            <div class="flex items-center gap-2.5">
+              <!-- Instagram -->
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-surface-container text-on-surface-variant hover:bg-primary hover:text-white transition-all flex items-center justify-center shadow-sm hover:scale-105" aria-label="Follow us on Instagram">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+
+              <!-- Facebook -->
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-surface-container text-on-surface-variant hover:bg-primary hover:text-white transition-all flex items-center justify-center shadow-sm hover:scale-105" aria-label="Follow us on Facebook">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.688 5H18V0h-3.82C10.518 0 9 1.579 9 4.615V8z"/>
+                </svg>
+              </a>
+
+              <!-- Twitter / X -->
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-surface-container text-on-surface-variant hover:bg-primary hover:text-white transition-all flex items-center justify-center shadow-sm hover:scale-105" aria-label="Follow us on X (Twitter)">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation (2 cols) -->
+        <div class="lg:col-span-2 space-y-4">
+          <h5 class="font-title-md text-[16px] text-on-surface font-semibold tracking-tight">Navigation</h5>
+          <ul class="space-y-2.5 font-body-sm text-body-sm">
+            <li><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1.5" href="index.html"><span class="w-1.5 h-1.5 rounded-full bg-primary/40"></span>Home</a></li>
+            <li><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1.5" href="about.html"><span class="w-1.5 h-1.5 rounded-full bg-primary/40"></span>About Us</a></li>
+            <li><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1.5" href="about.html#our-approach"><span class="w-1.5 h-1.5 rounded-full bg-primary/40"></span>Our Approach</a></li>
+            <li><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1.5" href="services.html"><span class="w-1.5 h-1.5 rounded-full bg-primary/40"></span>Our Services</a></li>
+            <li><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1.5" href="about.html#vision-mission"><span class="w-1.5 h-1.5 rounded-full bg-primary/40"></span>Core Values</a></li>
+            <li><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1.5" href="contact.html#faq-section"><span class="w-1.5 h-1.5 rounded-full bg-primary/40"></span>Client FAQ</a></li>
+            <li><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1.5" href="contact.html"><span class="w-1.5 h-1.5 rounded-full bg-primary/40"></span>Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Key Modalities (3 cols) -->
+        <div class="lg:col-span-3 space-y-4">
+          <h5 class="font-title-md text-[16px] text-on-surface font-semibold tracking-tight">Specialized Care</h5>
+          <ul class="space-y-2.5 font-body-sm text-body-sm">
+            <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="services.html">Individual Psychotherapy</a></li>
+            <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="services.html">Couples &amp; Relational Therapy</a></li>
+            <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="services.html">Trauma-Informed Healing (EMDR)</a></li>
+            <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="services.html">Cultural Identity &amp; Acculturation</a></li>
+            <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="services.html">Family Systems Dynamics</a></li>
+            <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="services.html">Neurodivergent-Affirming Care</a></li>
+            <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="services.html">Group Therapy &amp; Circles</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Sanctuary & Contact (3 cols) -->
+        <div class="lg:col-span-3 space-y-4">
+          <h5 class="font-title-md text-[16px] text-on-surface font-semibold tracking-tight">Sanctuary &amp; Hours</h5>
+          <div class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+            <div class="flex items-start gap-2.5">
+              <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">location_on</span>
+              <div>
+                <p class="font-medium text-on-surface">Central Park Sanctuary</p>
+                <p>145 Central Park West, Suite 4B<br/>New York, NY 10023</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-2.5">
+              <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">videocam</span>
+              <div>
+                <p class="font-medium text-on-surface">Statewide Telehealth</p>
+                <p>Secure video across NY, NJ &amp; PSYPACT</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-[18px] text-primary shrink-0">call</span>
+              <a href="tel:2125550194" class="hover:text-primary font-medium text-on-surface transition-colors">(212) 555-0194</a>
+            </div>
+
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-[18px] text-primary shrink-0">mail</span>
+              <a href="mailto:care@meltingpotpsychology.com" class="hover:text-primary transition-colors">care@meltingpotpsychology.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Legal / Copyright Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-[13px] text-on-surface-variant/80">
+        <p>© 2025 Melting Pot Psychological Services, PLLC. All rights reserved.</p>
+        <div class="flex flex-wrap items-center gap-6">
+          <a class="hover:text-primary transition-colors" href="contact.html">Notice of Privacy Practices</a>
+          <a class="hover:text-primary transition-colors" href="contact.html">Terms of Service</a>
+          <a class="hover:text-primary transition-colors" href="contact.html">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
+

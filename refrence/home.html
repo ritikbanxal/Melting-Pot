@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary":"#4f6356","primary-fixed-dim":"#ffb5a0","surface-dim":"#dcdad4","on-tertiary-container":"#ffffff","on-surface-variant":"#55433e","on-primary":"#ffffff","on-secondary-container":"#53675a","secondary-container":"#cfe5d4","primary-container":"#b55b41","on-secondary":"#ffffff","tertiary":"#4f6258","error-container":"#ffdad6","tertiary-fixed":"#d3e7db","surface-variant":"#e5e2dc","secondary-fixed":"#d2e8d7","on-tertiary-fixed":"#0d1f17","outline":"#88726c","error":"#ba1a1a","surface-container":"#f0eee8","outline-variant":"#dbc1ba","primary":"#96432b","on-primary-fixed":"#3b0900","on-secondary-fixed-variant":"#384b3f","inverse-on-surface":"#f3f0ea","secondary-fixed-dim":"#b6ccbb","primary-fixed":"#ffdbd1","surface-tint":"#99452d","on-secondary-fixed":"#0d1f15","on-error-container":"#93000a","on-primary-container":"#fffbff","inverse-surface":"#31312d","inverse-primary":"#ffb5a0","on-tertiary":"#ffffff","surface-container-high":"#ebe8e2","on-surface":"#1c1c18","surface":"#fcf9f3","on-background":"#1c1c18","on-error":"#ffffff","surface-container-highest":"#e5e2dc","on-tertiary-fixed-variant":"#384b41","tertiary-container":"#687b70","tertiary-fixed-dim":"#b7cbbf","background":"#fcf9f3","surface-bright":"#fcf9f3","surface-container-low":"#f6f3ed","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#7a2f18"},borderRadius:{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},spacing:{"space-lg":"2rem","gutter":"1.5rem","margin-mobile":"1.25rem","gutter-mobile":"1rem","space-md":"1.25rem","margin":"3rem","space-xs":"0.375rem","space-sm":"0.75rem","space-xl":"3.5rem"},fontFamily:{"headline-lg-mobile":["Newsreader"],"display":["Newsreader"],"title-md":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"display-mobile":["Newsreader"],"headline-lg":["Newsreader"],"label-lg":["Plus Jakarta Sans"],"headline-md-mobile":["Newsreader"],"body-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-md":["Newsreader"],"headline-sm":["Newsreader"],"label-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"]},fontSize:{"headline-lg-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"400"}],"display":["56px",{"lineHeight":"68px","letterSpacing":"-0.02em","fontWeight":"400"}],"title-md":["18px",{"lineHeight":"26px","fontWeight":"600"}],"title-lg":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"30px","fontWeight":"400"}],"display-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"400"}],"headline-lg":["44px",{"lineHeight":"54px","letterSpacing":"-0.015em","fontWeight":"400"}],"label-lg":["15px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.005em","fontWeight":"500"}],"body-md":["16px",{"lineHeight":"26px","fontWeight":"400"}],"body-sm":["14px",{"lineHeight":"22px","fontWeight":"400"}],"headline-md":["32px",{"lineHeight":"42px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-sm":["24px",{"lineHeight":"32px","fontWeight":"500"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4"><div class="flex items-center gap-3 shrink-0"><img alt="Melting Pot Psychological Services Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzFzsUMphkJ1mvpWI_SyTeevV8wqJgl6Otg0aELE3X7czleEzmG15coOvXsZVn2cZcCmbN3dW6XePXXx0gBfMOPJ_iteFsKIA2H1GiJQxk2SC30mErY94wIj9mMmZXWwdYuPIRWHtyapzB7k0RuXxsxEgb7RLwZW3S6Gcpge68mZvJ2B37mflM48FHfQbe678xIVggs5pcSMzqYWf0Tiv3bXJBXQTEmN5Q6X-ycckc"/><div class="flex flex-col leading-tight"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-serif">Melting Pot</span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase font-sans hidden sm:inline">Psychological Services</span></div></div><nav class="hidden xl:flex items-center gap-6 lg:gap-8" data-active-classes="text-primary font-title-md"><a aria-current="page" class="transition-colors text-primary font-title-md" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">About Us</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-approach" href="#">Our Approach</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-services" href="#">Our Services</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-team" href="#">Our Team</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="#">FAQ</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact-us" href="#">Contact Us</a></nav><div class="flex items-center gap-4 shrink-0"><a class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_4px_20px_-2px_rgba(184,93,67,0.18)] hover:bg-primary-container hover:text-on-primary-container transition-all duration-200" data-path="book-consultation" href="#">Book a Consultation</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Atmospheric Ambient Hero Section -->
+<section class="relative w-full overflow-hidden bg-surface-container-low px-6 lg:px-12 pt-12 pb-24 md:pb-32">
+<!-- Subtle organic background blur gradients -->
+<div class="absolute -top-32 right-0 w-[540px] h-[540px] rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -left-20 w-[480px] h-[480px] rounded-full bg-secondary/8 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Text Narrative -->
+<div class="lg:col-span-7 flex flex-col space-y-6">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-container/60 text-on-secondary-container w-fit shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Where Every Story Belongs</span>
+</div>
+<h1 class="font-display text-display text-on-surface font-serif tracking-tight leading-[1.12]">
+            Every Story Has a Place. <br/>
+<span class="italic text-primary font-normal">Every Journey Matters.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Every person deserves to belong. Every person has a story shaped by experiences, relationships, culture, identity, family, challenges, hopes, and dreams. Here, you are received with gentleness, quiet validation, and deep cultural reverence.
+          </p>
+<!-- Reassuring Manifesto Block -->
+<div class="p-6 rounded-2xl bg-surface-container/70 shadow-sm space-y-2">
+<p class="font-headline-sm text-headline-sm text-secondary font-serif italic">
+              “You do not need to have all the answers. You do not need to explain everything perfectly. You do not need to walk your journey alone.”
+            </p>
+</div>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="px-8 py-3.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container transition-all duration-200 flex items-center gap-2" data-path="book-consultation" href="#">
+<span>Begin Your Journey</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="px-7 py-3.5 rounded-full bg-surface-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-variant transition-all duration-200 flex items-center gap-2" data-path="our-approach" href="#">
+<span class="material-symbols-outlined text-secondary text-[20px]">spa</span>
+<span>Explore Our Approach</span>
+</a>
+</div>
+<!-- Inclusivity & Safety Trust Pills -->
+<div class="pt-6">
+<p class="font-label-sm text-label-sm text-on-surface-variant/80 uppercase tracking-wider mb-3">Anchored in Dignity, Trust &amp; Affirmation</p>
+<div class="flex flex-wrap gap-2.5">
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-surface text-on-surface-variant font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">public</span> Culturally Responsive Care
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-surface text-on-surface-variant font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">healing</span> Trauma-Informed (EMDR)
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-surface text-on-surface-variant font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">diversity_1</span> LGBTQIA+ Affirming
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-surface text-on-surface-variant font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">psychology_alt</span> Neurodivergent Affirming
+              </span>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-surface text-on-surface-variant font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">lock</span> Safe &amp; Confidential
+              </span>
+</div>
+</div>
+</div>
+<!-- Asymmetric Visual Composition -->
+<div class="lg:col-span-5 relative">
+<div class="relative w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-xl bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Calm, sunlit therapeutic consultation space featuring natural linen armchairs, a soft handcrafted ceramic vase with dried pampas grass, warm terracotta tones, large leafy monstera plant, and morning daylight streaming gently through sheer curtains onto warm oak flooring, conveying organic comfort and absolute psychological safety." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxZsxML9QHd3s2chSf9rhiuugFQ57lgb-NE5_i1_UZ0KJ-iHzdfvGqqAEILve37O3-idVchfjNey0BtW4bqkkapEb9QsW7ICLnfulqEhS8vM5Soks74MYiPFT24mJ3hK3vdYdSBmfs4JW0gNBgd-1L0jpsD5DuDhk05OZUna5DHVKmzdlTKSbchL3adyerTIJj7NO15a41Pnjnz8E8O5Gd_A-9-3eZaKwEwaFkPgo1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 p-5 rounded-2xl bg-surface/90 backdrop-blur-md shadow-lg">
+<div class="flex items-start gap-3">
+<div class="p-2.5 rounded-full bg-secondary-container text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">cloud_download</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-on-surface font-semibold">Immediate Gentle Openings</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">In-person sanctuary in New York &amp; secure telehealth across NY, NJ, and PSYPACT partner states.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Floating Stamp -->
+<div class="hidden sm:flex absolute -top-6 -left-8 p-4 rounded-2xl bg-surface shadow-lg items-center gap-3 animate-bounce" style="animation-duration: 4s;">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">favorite</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Safe Haven</p>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">No diagnosis required to begin</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: "You Belong Here" — Invitation & Pacing -->
+<section class="w-full px-6 lg:px-12 py-20 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="max-w-3xl mb-16 space-y-4">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[20px]">door_open</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">An Open Door</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-serif">
+          You Belong Here.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          You do not have to wait until life becomes overwhelming to seek support. You can reach out because you are struggling, because you are facing a difficult decision, because you want to grow, or simply because you want to understand yourself better.
+        </p>
+</div>
+<!-- 4 Pillars of Grounded Care -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="p-8 rounded-2xl bg-surface-container-low shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[26px]">hearing</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Compassionate Listening</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Space where every sentence is met with warmth and curiosity, unhurried by clinical labels or judgment.
+            </p>
+</div>
+<div class="pt-6 font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider flex items-center gap-1">
+<span>Non-Pathologizing</span>
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-8 rounded-2xl bg-surface-container-low shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">all_inclusive</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Whole-Person Care</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Honoring mind, body, lineage, neurotype, and cultural roots as interconnected parts of your internal landscape.
+            </p>
+</div>
+<div class="pt-6 font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider flex items-center gap-1">
+<span>Holistic Integration</span>
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-8 rounded-2xl bg-surface-container-low shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[26px]">explore</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Meaning &amp; Purpose</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Moving beyond immediate symptom management to uncover your intrinsic values, voice, and personal direction.
+            </p>
+</div>
+<div class="pt-6 font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider flex items-center gap-1">
+<span>Existential Clarity</span>
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-8 rounded-2xl bg-surface-container-low shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">devices_other</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Flexible Options</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              In-person sessions in our Central Park West consultation suite or secure HIPAA-compliant telehealth wherever you are.
+            </p>
+</div>
+<div class="pt-6 font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider flex items-center gap-1">
+<span>Your Comfort First</span>
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: The 5 Core Brand Principles Interactive Showcase -->
+<section class="w-full px-6 lg:px-12 py-20 bg-surface-container-high/40">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Our Foundational Grounding</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-serif mt-2">
+            The Five Brand Principles
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          How we sit with you. These principles guide our therapy rooms, administrative conversations, and community interactions.
+        </p>
+</div>
+<!-- Principles Accordion / Interactive List -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Interactive Controller Column -->
+<div class="lg:col-span-6 flex flex-col space-y-4" id="principles-container">
+<!-- Principle 1 -->
+<div class="principle-card p-6 rounded-2xl bg-surface shadow-sm cursor-pointer transition-all duration-300 active-principle" data-target="p1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md font-bold">1</span>
+<h4 class="font-title-lg text-title-lg text-on-surface font-serif">Belonging comes first</h4>
+</div>
+<span class="material-symbols-outlined text-primary principle-icon">expand_more</span>
+</div>
+<div class="principle-body pt-4 text-on-surface-variant font-body-md text-body-md">
+              Every client is received as a human being of intrinsic worth before discussing diagnostic codes or therapeutic interventions. Your safety and belonging anchor our therapeutic alliance.
+            </div>
+</div>
+<!-- Principle 2 -->
+<div class="principle-card p-6 rounded-2xl bg-surface-container-low shadow-sm cursor-pointer transition-all duration-300" data-target="p2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-md text-label-md font-bold">2</span>
+<h4 class="font-title-lg text-title-lg text-on-surface font-serif">See the whole person</h4>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant principle-icon">chevron_right</span>
+</div>
+<div class="principle-body hidden pt-4 text-on-surface-variant font-body-md text-body-md">
+              We look far past immediate stressors to discover your inherited strengths, chosen identities, ancestral stories, systemic realities, and untapped latent possibilities.
+            </div>
+</div>
+<!-- Principle 3 -->
+<div class="principle-card p-6 rounded-2xl bg-surface-container-low shadow-sm cursor-pointer transition-all duration-300" data-target="p3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-md text-label-md font-bold">3</span>
+<h4 class="font-title-lg text-title-lg text-on-surface font-serif">Respect every story</h4>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant principle-icon">chevron_right</span>
+</div>
+<div class="principle-body hidden pt-4 text-on-surface-variant font-body-md text-body-md">
+              Compassionate, non-judgmental, and culturally responsive care is not a checklist item for us—it is an ongoing ethic of deep humility, ongoing education, and clinical respect.
+            </div>
+</div>
+<!-- Principle 4 -->
+<div class="principle-card p-6 rounded-2xl bg-surface-container-low shadow-sm cursor-pointer transition-all duration-300" data-target="p4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-md text-label-md font-bold">4</span>
+<h4 class="font-title-lg text-title-lg text-on-surface font-serif">Make room for purpose</h4>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant principle-icon">chevron_right</span>
+</div>
+<div class="principle-body hidden pt-4 text-on-surface-variant font-body-md text-body-md">
+              Healing is not solely the absence of distress. It is the active unfolding of personal meaning, creative expression, authentic relationships, and purposeful living.
+            </div>
+</div>
+<!-- Principle 5 -->
+<div class="principle-card p-6 rounded-2xl bg-surface-container-low shadow-sm cursor-pointer transition-all duration-300" data-target="p5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-md text-label-md font-bold">5</span>
+<h4 class="font-title-lg text-title-lg text-on-surface font-serif">Offer hope without promises</h4>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant principle-icon">chevron_right</span>
+</div>
+<div class="principle-body hidden pt-4 text-on-surface-variant font-body-md text-body-md">
+              We do not sell hollow overnight transformations. Meaningful change is real, sustainable, and grounded when it unfolds in your timing and on your own terms.
+            </div>
+</div>
+</div>
+<!-- Dynamic Visual Presentation Display -->
+<div class="lg:col-span-6 sticky top-28">
+<div class="rounded-3xl bg-surface p-8 lg:p-10 shadow-lg relative overflow-hidden">
+<div class="space-y-6">
+<div class="w-16 h-16 rounded-2xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[32px]" id="display-icon">handshake</span>
+</div>
+<div class="space-y-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold" id="display-num">Principle 01</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-serif" id="display-title">
+                  Belonging Comes First
+                </h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed" id="display-text">
+                  Before we delve into symptom inventories or therapeutic techniques, we establish that you are fully welcomed as you are. A grounded space where your vulnerability is treated with absolute reverence.
+                </p>
+</div>
+<!-- Organic Quote Callout -->
+<div class="p-6 rounded-2xl bg-secondary-container/30 text-on-secondary-container mt-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">format_quote</span>
+<p class="font-headline-sm text-headline-sm italic font-serif">
+                    You do not need to prove your pain to earn support.
+                  </p>
+</div>
+</div>
+<div class="pt-4 flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+<span class="font-body-sm text-body-sm">Practiced across all individual, couple, and group modalities</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: "Support for Every Chapter of Life" (Practice Areas Overview) -->
+<section class="w-full px-6 lg:px-12 py-24 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Specialized Practice Areas</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-serif mt-2">
+            Support for Every Chapter of Life
+          </h2>
+</div>
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:text-primary-container font-semibold transition-colors" data-path="our-services" href="#">
+<span>Explore All 11 Clinical Offerings</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Bento Grid of Key Care Areas -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Area 1: Individual Psychotherapy -->
+<div class="p-8 rounded-3xl bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">person</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Service 01</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif mb-3">Individual Psychotherapy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              A private, grounded sanctuary to untangle inner conflicts, navigate mood challenges, and cultivate self-compassion.
+            </p>
+</div>
+<div class="pt-6">
+<a class="font-label-md text-label-md text-primary font-semibold inline-flex items-center gap-1.5 hover:gap-2.5 transition-all" data-path="individual-psychotherapy" href="#">
+<span>Read details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Area 2: Couples & Marriage -->
+<div class="p-8 rounded-3xl bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="w-10 h-10 rounded-full bg-secondary/10 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">diversity_2</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Service 04</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif mb-3">Couples &amp; Relationships</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Rebuilding trust, deepening attunement, repairing communication ruptures, and navigating cross-cultural dynamics together.
+            </p>
+</div>
+<div class="pt-6">
+<a class="font-label-md text-label-md text-secondary font-semibold inline-flex items-center gap-1.5 hover:gap-2.5 transition-all" data-path="couples-relationship-therapy" href="#">
+<span>Read details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Area 3: Family Systems & Dynamics -->
+<div class="p-8 rounded-3xl bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">family_restroom</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Service 05</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif mb-3">Family Systems Therapy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Bridging generational divides, clarifying boundaries, and healing systemic family patterns with collective grace.
+            </p>
+</div>
+<div class="pt-6">
+<a class="font-label-md text-label-md text-primary font-semibold inline-flex items-center gap-1.5 hover:gap-2.5 transition-all" data-path="family-systems-therapy" href="#">
+<span>Read details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Area 4: Cultural Identity & Acculturation -->
+<div class="p-8 rounded-3xl bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="w-10 h-10 rounded-full bg-secondary/10 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">public</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Service 02</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif mb-3">Cultural Identity &amp; Acculturation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Honoring first-and second-generation immigrant journeys, code-switching fatigue, diaspora grief, and pride.
+            </p>
+</div>
+<div class="pt-6">
+<a class="font-label-md text-label-md text-secondary font-semibold inline-flex items-center gap-1.5 hover:gap-2.5 transition-all" data-path="cultural-identity-counseling" href="#">
+<span>Read details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Area 5: Trauma-Informed Healing (EMDR) -->
+<div class="p-8 rounded-3xl bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">waves</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Service 03</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif mb-3">Trauma-Informed Care (EMDR)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Somatic, nervous system stabilization and evidence-based EMDR protocols to gently process past painful memories.
+            </p>
+</div>
+<div class="pt-6">
+<a class="font-label-md text-label-md text-primary font-semibold inline-flex items-center gap-1.5 hover:gap-2.5 transition-all" data-path="trauma-informed-care" href="#">
+<span>Read details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Area 6: Neurodivergent-Affirming Care -->
+<div class="p-8 rounded-3xl bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="w-10 h-10 rounded-full bg-secondary/10 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">neurology</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Service 10</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif mb-3">Neurodivergent-Affirming</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Affirming ADHD, Autism, and sensory differences without forcing masking or neuro-normative standards.
+            </p>
+</div>
+<div class="pt-6">
+<a class="font-label-md text-label-md text-secondary font-semibold inline-flex items-center gap-1.5 hover:gap-2.5 transition-all" data-path="neurodivergent-affirming-care" href="#">
+<span>Read details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: "Who We Support: Every Person. Every Background. Every Journey." -->
+<section class="w-full px-6 lg:px-12 py-20 bg-surface-container">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Visual Collage / Atmospheric Representation -->
+<div class="lg:col-span-5 relative order-2 lg:order-1">
+<div class="relative w-full aspect-square rounded-3xl overflow-hidden shadow-xl bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Richly diverse group of individuals conversing calmly in a sun-drenched, botanical-filled community therapy space with warm clay and olive decor, sharing quiet moments of genuine understanding and belonging, artistic fine art photography aesthetic with soft natural depth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTAs9F8xk_hrpmWGfk9wgLEh-5Fd1wsiHwbhpjGEmRhmoRSgcjv6QVAUs6Jv4iS8ic9AbYrdOVNSYPd0KARl1YoR1bH72BNUrNFw5owpj4Q4uZkfCpU3iF6-1_SfkMAw8VrTDEbP4U11p3WzpB0bEOjwlrL6HFIpZumy8SQrnx57i_s1Elz9rY3QZNTtMu6tjyvb8wiMIFRXk6Y7d_RODjoA9BBmMyhoFPdLZsJmw8"/>
+</div>
+<!-- Organic Stat Card Layer -->
+<div class="absolute -bottom-6 -right-6 p-6 rounded-2xl bg-surface text-on-surface shadow-xl max-w-xs">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">groups</span>
+</div>
+<div>
+<p class="font-title-lg text-title-lg font-bold">Inclusive</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Multilingual &amp; Cross-Cultural Team</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Narrative Content -->
+<div class="lg:col-span-7 space-y-6 order-1 lg:order-2">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Radical Welcoming</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-serif">
+            Who We Support: Every Person. Every Background. Every Journey.
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Our practice was conceived as a vibrant mosaic—a sanctuary where no facet of your human identity is an obstacle to high-quality psychological care. Whether you are navigating generational shifts, rediscovering yourself following trauma, or seeking a space that simply accepts you without translation.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+<div class="p-4 rounded-xl bg-surface shadow-sm flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">face</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-medium">Youth &amp; Adults</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Navigating emerging autonomy, identity, and life crossroads.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface shadow-sm flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">volunteer_activism</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-medium">Partners &amp; Couples</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rebuilding intimacy across blended, poly, and modern configurations.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface shadow-sm flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">flight_takeoff</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-medium">Diaspora &amp; Immigrants</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Care that honors heritage, displacement, and cultural duality.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface shadow-sm flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">self_improvement</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-medium">Seekers &amp; Creatives</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Integrating purpose, creative burnout, and existential renewal.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Welcoming Gentle Consultation Prompt -->
+<section class="w-full px-6 lg:px-12 py-24 bg-surface">
+<div class="max-w-5xl mx-auto rounded-3xl bg-secondary-container/40 p-8 md:p-14 shadow-md relative overflow-hidden">
+<!-- Decorative background accent -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-secondary/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center text-center space-y-6 max-w-2xl mx-auto">
+<div class="w-14 h-14 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px]">favorite</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-secondary-container font-serif">
+          Your Story Matters.<br/>
+<span class="italic font-normal">There is Room for You Here.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-secondary-container/90 leading-relaxed">
+          You deserve to be heard by someone who listens without presupposition. Take this step at your pace. We offer complimentary 15-minute consultations to help you find the right clinician fit.
+        </p>
+<div class="flex flex-col sm:flex-row items-center gap-4 pt-4 w-full sm:w-auto">
+<a class="w-full sm:w-auto px-8 py-4 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container transition-all flex items-center justify-center gap-2" data-path="book-consultation" href="#">
+<span>Schedule Initial Intake</span>
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+</a>
+<a class="w-full sm:w-auto px-8 py-4 rounded-full bg-surface text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-variant transition-all flex items-center justify-center gap-2" data-path="contact-us" href="#">
+<span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+<span>Ask a Question First</span>
+</a>
+</div>
+<!-- Practical reassurance note -->
+<p class="font-body-sm text-body-sm text-on-secondary-container/80 pt-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Zero pressure, no commitment. Strictly confidential.</span>
+</p>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Principles Interactive Component Logic
+  (function initPrinciples() {
+    const principleCards = document.querySelectorAll('.principle-card');
+    const displayNum = document.getElementById('display-num');
+    const displayTitle = document.getElementById('display-title');
+    const displayText = document.getElementById('display-text');
+    const displayIcon = document.getElementById('display-icon');
+
+    const principleData = {
+      p1: {
+        num: 'Principle 01',
+        title: 'Belonging Comes First',
+        text: 'Before we delve into symptom inventories or diagnostic assessments, we establish that you are fully welcomed as you are. A grounded sanctuary where your vulnerability is treated with absolute reverence.',
+        icon: 'handshake'
+      },
+      p2: {
+        num: 'Principle 02',
+        title: 'See the Whole Person',
+        text: 'We look far beyond distress markers to identify your innate resilience, cultural context, neurotype, and personal joys. You are a complete, evolving human being—not a cluster of symptoms.',
+        icon: 'diversity_3'
+      },
+      p3: {
+        num: 'Principle 03',
+        title: 'Respect Every Story',
+        text: 'Every narrative brought into our rooms is honored without unsolicited advice or cultural dismissal. We hold space for ambiguous loss, identity exploration, and quiet truth.',
+        icon: 'menu_book'
+      },
+      p4: {
+        num: 'Principle 04',
+        title: 'Make Room for Purpose',
+        text: 'Therapy creates clearance for what matters most. We work collaboratively to help you cultivate intentional meaning, values-aligned work, authentic connection, and vitality.',
+        icon: 'lightbulb'
+      },
+      p5: {
+        num: 'Principle 05',
+        title: 'Offer Hope Without Promises',
+        text: 'We practice authentic realism. Healing takes its own organic timeline, and we promise steady, skilled companionship rather than quick fixes or artificial certainty.',
+        icon: 'nature_people'
+      }
+    };
+
+    principleCards.forEach(card => {
+      card.addEventListener('click', function() {
+        const target = this.getAttribute('data-target');
+        const data = principleData[target];
+
+        // Update active styles in left list
+        principleCards.forEach(c => {
+          c.classList.remove('bg-surface', 'active-principle');
+          c.classList.add('bg-surface-container-low');
+          const numSpan = c.querySelector('span:first-child');
+          if (numSpan) {
+            numSpan.classList.remove('bg-primary', 'text-on-primary');
+            numSpan.classList.add('bg-secondary-container', 'text-on-secondary-container');
+          }
+          const iconSpan = c.querySelector('.principle-icon');
+          if (iconSpan) {
+            iconSpan.textContent = 'chevron_right';
+            iconSpan.classList.remove('text-primary');
+            iconSpan.classList.add('text-on-surface-variant');
+          }
+          const bodyEl = c.querySelector('.principle-body');
+          if (bodyEl) bodyEl.classList.add('hidden');
+        });
+
+        this.classList.remove('bg-surface-container-low');
+        this.classList.add('bg-surface', 'active-principle');
+        const activeNum = this.querySelector('span:first-child');
+        if (activeNum) {
+          activeNum.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+          activeNum.classList.add('bg-primary', 'text-on-primary');
+        }
+        const activeIcon = this.querySelector('.principle-icon');
+        if (activeIcon) {
+          activeIcon.textContent = 'expand_more';
+          activeIcon.classList.remove('text-on-surface-variant');
+          activeIcon.classList.add('text-primary');
+        }
+        const activeBody = this.querySelector('.principle-body');
+        if (activeBody) activeBody.classList.remove('hidden');
+
+        // Update presentation card on right
+        if (data && displayNum && displayTitle && displayText && displayIcon) {
+          displayNum.textContent = data.num;
+          displayTitle.textContent = data.title;
+          displayText.textContent = data.text;
+          displayIcon.textContent = data.icon;
+        }
+      });
+    });
+  })();
+</script></main><footer class="w-full bg-surface-container-low text-on-surface-variant pt-16 pb-12 mt-16 shadow-[0_-1px_12px_rgba(0,0,0,0.02)]"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="p-6 md:p-8 rounded-lg bg-secondary-container/40 mb-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-6"><div class="flex items-start gap-4"><div class="p-3 rounded-full bg-secondary-container text-on-secondary-container"><span class="material-symbols-outlined text-[24px]">support_agent</span></div><div><h4 class="font-title-lg text-title-lg text-on-secondary-container mb-1">Immediate Support &amp; Crisis Resources</h4><p class="font-body-sm text-body-sm text-on-secondary-container/90 max-w-2xl">If you or a loved one is in crisis or distress, free, confidential compassionate care is available 24/7. Call or text <strong class="font-bold">988</strong> to connect with the Suicide &amp; Crisis Lifeline, or text HOME to 741741.</p></div></div><a class="shrink-0 px-5 py-2.5 rounded-full bg-secondary text-on-secondary font-label-lg text-label-lg hover:bg-secondary/90 transition-colors flex items-center gap-2" href="tel:988"><span class="material-symbols-outlined text-[18px]">call</span>Call 988</a></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 mb-16"><div class="lg:col-span-2 space-y-4"><div class="flex items-center gap-3"><img alt="Melting Pot Psychological Services Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzFzsUMphkJ1mvpWI_SyTeevV8wqJgl6Otg0aELE3X7czleEzmG15coOvXsZVn2cZcCmbN3dW6XePXXx0gBfMOPJ_iteFsKIA2H1GiJQxk2SC30mErY94wIj9mMmZXWwdYuPIRWHtyapzB7k0RuXxsxEgb7RLwZW3S6Gcpge68mZvJ2B37mflM48FHfQbe678xIVggs5pcSMzqYWf0Tiv3bXJBXQTEmN5Q6X-ycckc"/><span class="font-headline-sm text-headline-sm text-primary font-serif">Melting Pot</span></div><p class="font-headline-sm text-headline-sm text-on-surface italic font-serif">Where Every Story Belongs.</p><p class="font-body-md text-body-md text-on-surface-variant max-w-md">A culturally affirming, grounded psychological practice creating an atmospheric sanctuary for healing, self-discovery, and authentic connection across all walks of life.</p><div class="pt-2 space-y-2 font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">location_on</span><span>145 Central Park West, Suite 4B, New York, NY 10023</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">mail</span><span>care@meltingpotpsychology.com</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">call</span><span>(212) 555-0194</span></div></div></div><div><h5 class="font-title-md text-title-md text-on-surface mb-4">Core Exploration</h5><ul class="space-y-3 font-body-sm text-body-sm"><li class="flex items-center"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="about-us" href="#">About Us</a></li><li class="flex items-center"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="our-approach" href="#">Our Approach &amp; Values</a></li><li class="flex items-center"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="our-team" href="#">Our Clinicians</a></li><li class="flex items-center"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="faq" href="#">Frequently Asked Questions</a></li><li class="flex items-center"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="contact-us" href="#">Contact &amp; Directions</a></li><li class="flex items-center"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="book-consultation" href="#">Schedule an Initial Intake</a></li></ul></div><div class="lg:col-span-2"><h5 class="font-title-md text-title-md text-on-surface mb-4">Specialized Clinical Services (11)</h5><div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3 font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="individual-psychotherapy" href="#">1. Individual Psychotherapy</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="cultural-identity-counseling" href="#">2. Cultural Identity &amp; Acculturation</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="trauma-informed-care" href="#">3. Trauma-Informed Healing (EMDR)</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="couples-relationship-therapy" href="#">4. Couples &amp; Relationship Therapy</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="family-systems-therapy" href="#">5. Family Systems &amp; Dynamics</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="anxiety-depression-support" href="#">6. Anxiety &amp; Depression Care</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="grief-loss-processing" href="#">7. Grief &amp; Ambiguous Loss</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="lgbtqia-affirming-therapy" href="#">8. LGBTQIA+ Affirming Therapy</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="life-transitions-coaching" href="#">9. Life Transitions &amp; Meaning</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="neurodivergent-affirming-care" href="#">10. Neurodivergent-Affirming Care</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="group-therapy-workshops" href="#">11. Group Therapy &amp; Circles</a></div></div></div><div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant/80"><p>© 2025 Melting Pot Psychological Services, PLLC. All rights reserved. Where Every Story Belongs.</p><div class="flex items-center gap-6"><a class="hover:text-primary transition-colors" data-path="privacy-policy" href="#">Notice of Privacy Practices</a><a class="hover:text-primary transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="hover:text-primary transition-colors" data-path="accessibility" href="#">Accessibility Statement</a></div></div></div></footer></body></html>
