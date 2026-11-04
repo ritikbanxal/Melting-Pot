@@ -20,17 +20,11 @@
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png"/>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
   <link rel="shortcut icon" href="favicon.ico"/>
-
-  <style>
-    /* Critical anti-FOUC & drawer stability */
-    #mobile-menu-drawer { visibility: hidden; pointer-events: none; }
-    #mobile-menu-backdrop { display: none; }
-  </style>
 </head>
 <body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen flex flex-col">
 
   <!-- Header -->
-  <header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+  <header class="fixed top-0 left-0 w-full z-40 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
     <div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4">
       <a href="index.html" class="flex items-center gap-3 shrink-0 group">
         <img alt="Melting Pot Psychological Services Logo" class="h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105" src="images/logo-icon.png"/>
@@ -59,7 +53,7 @@
         </a>
 
         <!-- Mobile Menu Toggle -->
-        <button id="mobile-menu-btn" type="button" class="xl:hidden w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-variant hover:text-primary transition-colors" aria-label="Open navigation menu">
+        <button id="mobile-menu-btn" type="button" class="xl:hidden w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-variant hover:text-primary transition-all cursor-pointer active:scale-95 touch-manipulation" aria-label="Open navigation menu">
           <span class="material-symbols-outlined text-[24px]">menu</span>
         </button>
       </div>
@@ -67,10 +61,10 @@
   </header>
 
   <!-- Mobile Menu Backdrop -->
-  <div id="mobile-menu-backdrop" class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300"></div>
+  <div id="mobile-menu-backdrop" class="fixed inset-0 z-50 bg-inverse-surface/50 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300"></div>
 
   <!-- Mobile Menu Drawer -->
-  <div id="mobile-menu-drawer" class="fixed top-0 right-0 z-50 w-[85%] max-w-[340px] h-full bg-surface shadow-2xl p-6 flex flex-col justify-between invisible pointer-events-none translate-x-full transition-all duration-300 ease-in-out overflow-y-auto border-l border-surface-variant/60">
+  <div id="mobile-menu-drawer" class="fixed top-0 right-0 z-[60] w-[85%] max-w-[340px] h-full bg-surface shadow-2xl p-6 flex flex-col justify-between invisible pointer-events-none translate-x-full transition-all duration-300 ease-in-out overflow-y-auto border-l border-surface-variant/60">
     <div class="space-y-6">
       <div class="flex items-center justify-between pb-4 border-b border-surface-variant">
         <div class="flex items-center gap-2.5">
